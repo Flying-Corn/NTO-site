@@ -1,0 +1,334 @@
+@import url(content/header.css);
+@import url(content/main.css);
+@import url(content/footer.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* --------- ELEMENTS --------- */
+
+.elm-divider {
+    height: 3px;
+    width: 75%;
+
+    background: #e3d1d1bf;
+}
+
+.elm-header {
+    display: block;
+    width: 100%;
+    padding: 15px 0 10px 0;
+
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+}
+
+.img-container {
+    width: fit-content;
+    height: fit-content;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#product, #team {
+    margin: 35px 0 35px 0;
+}
+
+/* --------- PHOTO CARD --------- */
+
+.photo-container {
+    display: block;
+    height: 500px;
+    width: 450px;
+    position: relative;
+}
+
+.photo-card {
+    width: 250px;
+    height: 380px;
+    padding: 30px 30px 0 30px;
+    position: absolute;
+    top: 0;
+    margin-left: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+.card-1 {
+    transform: rotate(-10deg);
+    z-index: 1;
+}
+
+.card-2 {
+    top: 25px;
+    left: 25px;
+    z-index: 2;
+}
+
+.card-3 {
+    top: 50px;
+    left: 50px;
+    transform: rotate(10deg);
+    z-index: 3;
+}
+
+.card-1:hover {
+    transform: translateY(-20px) rotate(-10deg);
+    z-index: 999;
+}
+
+.card-2:hover {
+    transform: translateY(-20px);
+    z-index: 999;
+}
+
+.card-3:hover {
+    transform: translateY(-20px) rotate(10deg);
+    z-index: 999;
+}
+
+.photo {
+    width: 264px;
+    height: 264px;
+    border: #000 1px solid;
+}
+
+.photo-text {
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+/* --------- OPENING --------- */
+
+.opening {
+    height: 500px;
+}
+
+/* --------- PRODUCT --------- */
+
+#products {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-box {
+    width: 75%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.product-box-header {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 35px;
+    font-weight: 500;
+    word-break: keep-all;
+}
+
+.product-box-content-1 {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 35px;
+    position: relative;
+}
+
+.product-box-content-text {
+    display: inline-block;
+    width: 350px;
+    height: fit-content;
+    word-break: keep-all;
+    text-align: start;
+
+    font-family: 'Roboto Mono', monospace;
+}
+
+.product-box-content-2 {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 35px;
+}
+
+.product-box-container {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.way-product-box-2 {
+    position: absolute;
+    top: 120px;
+    left: 200px
+}
+
+/* --------- PLACE IMG --------- */
+
+.place-img-box {
+    width: 87px;
+    height: 102px;
+    padding: 5px 7px 5px 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    transition-property: scale;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+}
+
+.place-img-box:hover {
+    scale: 1.2;
+}
+
+.img-1 {
+    left: 150px;
+}
+
+.img-2 {
+    left: 350px;
+    top: 310px;
+}
+
+
+/* --------- TEAM --------- */
+
+#team {
+    width: 100%;
+    height: fit-content;
+}
+
+.team-content {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0 40px 0;
+}
+
+.team-line {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.person-card {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.person-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    transform: rotateY(0deg);
+
+    transition-property: transform;
+    transition: 500ms;
+    backface-visibility: hidden;
+}
+
+.person-description-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    transform: rotateY(180deg);
+
+    background-color: #e3d1d1;
+    opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-property: transform;
+    transition: 700ms;
+    backface-visibility: hidden;
+}
+
+.person-card:hover .person-img {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.person-card:hover .person-description-container {
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+
+.person-link {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    transition-property: scale;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+.person-link:hover {
+    scale: 1.15;
+}
+
+.person-name {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 5px;
+
+    font-size: 20px;
+}
+
+/* --------- FOOTER --------- */
+
+.footer {
+    height: 200px;
+    background: #e3d1d1bf;
+}
+
+/* --------- NEGATIVE --------- */
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.polar {
+    align-items: end;
+}
