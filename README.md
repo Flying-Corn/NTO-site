@@ -1,6 +1,6 @@
 # Our NTO project
 
-Welcome to out repository for NTO (National Technology Olympiad) in Computer Vision profile
+Welcome to out repository for NTO (National Technology Olympiad) in Computer Vision profile  
 In this repository you can find:
 
 ## Model
