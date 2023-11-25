@@ -7,10 +7,10 @@ In this repository you can find:
   
 There are our neural network
   
-## Frontend
+## Docs
   
 There are design for our site 
   
-## Backend
+## App
   
 There are architecture of out web app
