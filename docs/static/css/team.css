@@ -1,6 +1,6 @@
-@import url(content/header.css);
-@import url(content/main.css);
-@import url(content/footer.css);
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
 
 .man {
     width: 100%;
