@@ -4,68 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our team</title>
-    <link rel="stylesheet" href="css/team.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='team.css') }}">
 </head>
+
 <body>
-    <header class="header">
-        <div class="header-title">
-            <div class="logo-box">
-                <img class="logo" src="img/logo/logo.jpeg" alt="logo">
-            </div>
-            <span class="header-name">Name</span>
+<header class="header">
+    <div class="header-title">
+        <div class="logo-box">
+            <img class="logo" src="static/img/logo/logo.jpeg" alt="logo">
+        </div>
+        <span class="header-name">Name</span>
+    </div>
+
+    <div class="header-elements">
+        <a class="header-link" href="product.html">product</a>
+        <a class="header-link" href="#">team</a>
+    </div>
+</header>
+
+<main class="main">
+    <div class="man">
+        <div class="avatar-box">
+            <img class="avatar" src="static/img/avatars/arslan.jpeg" alt="arslan">
         </div>
 
-        <div class="header-elements">
-            <a class="header-link" href="product.html">product</a>
-            <a class="header-link" href="#">team</a>
+        <div class="description">
+            <h1 class="name">Курбанов Арслан</h1>
         </div>
-    </header>
+    </div>
 
-    <main class="main">
-        <div class="man">
-            <div class="avatar-box">
-                <img class="avatar" src="img/avatars/arslan.jpeg" alt="arslan">
-            </div>
-
-            <div class="description">
-                <h1 class="name">Курбанов Арслан</h1>
-            </div>
+    <div class="man">
+        <div class="avatar-box">
+            <img class="avatar" src="static/img/avatars/askar.jpeg" alt="askar">
         </div>
+        <div class="description">
+            <h1 class="name">Даутов Аскар</h1>
+        </div>
+    </div>
 
-        <div class="man">
-            <div class="avatar-box">
-                <img class="avatar" src="img/avatars/askar.jpeg" alt="askar">
-            </div>
-            <div class="description">
-                <h1 class="name">Даутов Аскар</h1>
-            </div>
+    <div class="man">
+        <div class="avatar-box">
+            <img class="avatar" src="static/img/avatars/iskander.jpeg" alt="iskander">
         </div>
 
-        <div class="man">
-            <div class="avatar-box">
-                <img class="avatar" src="img/avatars/iskander.jpeg" alt="iskander">
-            </div>
-
-            <div class="description">
-                <h1 class="name">Хафизов Искандер</h1>
-            </div>
+        <div class="description">
+            <h1 class="name">Хафизов Искандер</h1>
         </div>
+    </div>
 
-        <div class="man">
-            <img class="avatar" src="img/avatars/timur.jpeg" alt="timur">
+    <div class="man">
+        <img class="avatar" src="static/img/avatars/timur.jpeg" alt="timur">
 
-            <div class="description">
-                <h1 class="name">Ахметзянов Тимур</h1>
-            </div>
+        <div class="description">
+            <h1 class="name">Ахметзянов Тимур</h1>
         </div>
+    </div>
 
-        <div class="man">
-            <img class="avatar" src="img/avatars/yana.jpeg" alt="yana">
+    <div class="man">
+        <img class="avatar" src="static/img/avatars/yana.jpeg" alt="yana">
 
-            <div class="description">
-                <h1 class="name">Тазетдинова Яна</h1>
-            </div>
+        <div class="description">
+            <h1 class="name">Тазетдинова Яна</h1>
         </div>
-    </main>
+    </div>
+</main>
 </body>
 </html>
