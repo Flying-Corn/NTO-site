@@ -1,8 +1,6 @@
-from flask import Flask
 from flask import render_template, redirect, url_for
 
-app = Flask(__name__, template_folder='../docs')
-app.config.from_object('config.Config')
+from . import app
 
 
 @app.route('/')
@@ -13,8 +11,7 @@ def index():
 
 @app.errorhandler(404)
 def error_404(e):
-    data = {}
-    return render_template('index.html', data=data)
+    return 'Ошибка! Страница не найдена'
 
 
 @app.errorhandler(401)

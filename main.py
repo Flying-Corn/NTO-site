@@ -1,8 +1,4 @@
-# бэк сайта
-from app.views import *
-
-# нейронка
-# from model import model
+from app import app
 
 if __name__ == "__main__":
     app.run(debug=True)
